@@ -1,0 +1,1052 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url('./font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+ }
+@font-face {
+  font-family: "Barlow";
+  src: url('./font/Barlow-ExtraLightItalic.ttf');
+ }
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+ }
+
+p {
+font-family: "Barlow", sans-serif;
+font-weight: 800;
+ } 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+ }
+
+/* nav bar */
+.hero {
+    background: url("./images/desktop/image-header.jpg");
+   background-position: center;
+   background-size: cover;
+    width: 100%;
+    height: 100vh;
+ }
+
+.header-title {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  margin-top: 100px;
+ }
+
+.hero .arrow {
+  width: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 3rem;
+ }
+
+/* nav bar ========================*/
+.hero nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+.hero .bar {
+  padding-top: 2.5rem;
+  padding-right: 4rem;
+  display: none; 
+ }
+
+.hero nav h1 {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2.2rem;
+  padding-top: 2.5rem;
+ }
+
+.hero nav ul li {
+  display: inline-block;
+  padding-right: 4rem;
+  padding-top: 2.5rem;
+ }
+
+.hero nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+ }
+
+.hero nav ul a:hover {
+  color: #2a2d2e;
+  background-color: #fff;
+  padding:  10px 20px 10px 20px;
+  border-radius: 30px;
+ }
+/* ============================ */
+
+
+/* section two */
+ .card {
+  /* color: white;  */
+  padding: 1rem;
+  height: 40rem;
+ } 
+
+ .cards{  
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+  }
+ 
+  /* first div with text */
+  #one {
+    background: #fff;
+    color: black;
+    text-align: justify;
+   padding-top: 10rem;
+  }
+ 
+  #one h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+    padding-left: 25%;
+  }
+  
+  #one p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    padding-left: 25%;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+  }
+ 
+  #one a {
+    text-decoration: none;
+    color: black;
+    padding-left: 25%;
+  }
+  
+  #one a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #f8fb40;
+  }
+  
+  /* the second div egg */
+  #two {
+    background: url('./images/desktop/image-transform.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* glass */
+  #three {
+    background: url('./images/desktop/image-stand-out.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* text div 2 */
+  #four {
+    background: #fff;
+    color: black;
+    text-align: justify;
+   padding-top: 10rem;
+  }
+ 
+  #four h1 {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+    padding-left: 25%;
+  }
+ 
+  #four p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    padding-left: 25%;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  #four a {
+    text-decoration: none;
+    color: black;
+    padding-left: 25%;
+  }
+  
+  #four a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #eb8a9f;
+  }
+
+  /* cherries */
+  #five {
+    background: url('./images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #five h1 {
+    color: #0e5149;
+    text-align: center;
+    padding-top: 25rem;
+  }
+  
+  #five p {
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #0e5149;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* orange */
+  #six {
+    background: url('./images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #six h1 {
+    color: #235a7d;
+    text-align: center;
+    padding-top: 25rem;
+  }
+ 
+  #six p {
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #235a7d;
+    text-align: center;
+    line-height: 1.6;
+  }
+ 
+  /* section client */
+  .client {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .title{
+    padding-top: 10rem;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+  .photo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* marketing director */
+  
+  .client .icon img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    
+  }
+  .photo p {
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #2a2d2e;
+  }
+.photo h4 {
+    padding-top: 3.2rem;
+    font-size: 1.3rem;
+}
+.photo .name {
+    padding-top: 0.5rem;
+    color: #7f8c8d;
+}
+  
+  
+  /* chief operating officer */
+  .client .icon2 img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+   
+  }
+
+  /* business owner */
+  .client .icon3 img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+  }
+
+/* photos */
+
+.row {
+    width: 100%;
+    height: 60vh;
+    
+    
+   }
+   .row {
+    display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+   }
+   
+
+   #milk {
+    background: url('./images/desktop/image-gallery-milkbottles.jpg');
+    background-size: cover;
+    background-position: center;
+   }
+   #org {
+    background: url('./images/desktop/image-gallery-orange.jpg');
+    background-size: cover;
+    background-position: center;
+   }
+   #cone {
+    background: url('./images/desktop/image-gallery-cone.jpg');
+    background-size: cover;
+    background-position: center;
+   }
+   #sug {
+    background: url('./images/desktop/image-gallery-sugarcubes.jpg');
+    background-size: cover;
+    background-position: center;
+   }
+ 
+   /* footer */
+   .footer {
+    width: 100%;
+    height: 35vh;
+    background: #93eee2;
+   }
+   .footer h1 {
+    
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #185e4a;
+    text-align: center;
+    padding-top: 4rem;
+
+   }
+   .footer ul li {
+    display: inline-block;
+    padding-top: 2.3rem;
+   }
+   .footer ul {
+    display: flex;
+    justify-content: center;
+    
+   }
+   
+   
+   .footer a {
+    color: #217f69;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2rem;
+   }
+
+   .footer a:hover {
+    color: #fff;
+   }
+
+   .footer .icon {
+    display: flex;
+    justify-content: center;
+   }
+   .footer .icon a {
+    padding: 1.1rem;
+    padding-top: 4.2rem;
+   }
+   
+   .icon img:hover {
+    color: #fff;
+   }
+ 
+ 
+  @media screen and (max-width: 1240px) {
+
+    .hero nav ul li {
+      display: inline-block;
+      padding-right: 4rem;
+      padding-top: 2.5rem;
+      
+    
+    }
+    .hero nav ul a {
+      font-size: 1.2rem;
+    }
+
+    .header-title {
+      font-size: 2rem;
+  } 
+    
+    
+    #one h1 {
+      font-size: 2.1rem;
+      padding-bottom: 1.2rem;
+      padding-left: 15%;
+    }
+    #one p {
+      font-size: 1rem;
+      padding-left: 15%;
+      padding-bottom: 2rem;
+      
+     
+    }
+    #one a {
+      padding-left: 15%;
+     
+    }
+
+    #four {
+     padding-top: 10rem;
+    }
+  
+    #four h1 {
+      font-size: 2.1rem;
+      padding-bottom: 2rem;
+      padding-left: 15%;
+    }
+    #four p {
+      font-size: 1rem;
+      padding-left: 15%;
+      padding-bottom: 2rem;
+     
+     
+    }
+    #four a {
+      padding-left: 15%;
+    }
+    #five h1 {
+      font-size: 2.1rem;
+      padding-top: 25rem;
+    }
+    #five p {
+      padding-top: 1.5rem;
+      font-size: 1rem;
+    }
+
+    #six h1 {
+      padding-top: 25rem;
+     
+    }
+    #six p {
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.6; 
+    }
+
+
+    .title{
+      font-size: 2.1;
+      padding-top: 5rem;    
+  }
+  
+    
+    /* marketing director */
+    
+    .client .icon img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .photo p {
+      padding-top: 1.5rem;
+      font-size: 1rem;
+    }
+  .photo h4 {
+      padding-top: 3rem;
+      font-size: 1.1rem;
+  }
+  .photo .name {
+    font-size: 0.9rem;
+      padding-top: 0.5rem;
+  }
+    
+    
+    /* chief operating officer */
+    .client .icon2 img {
+      width: 4rem;
+      height: 4rem;
+     
+    }
+  
+    /* business owner */
+    .client .icon3 img {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .footer h1 {
+      font-size: 2.1rem;
+      padding-top: 0.5rem;
+     }
+     
+     .footer ul li {
+      padding-top: 2.3rem;
+     }
+     
+     .footer a {
+      font-size: 1rem;
+     }
+  
+     .footer .icon a {
+      padding: 1rem;
+      padding-top: 1.5rem;
+      font-size: 0.5rem;
+     }
+  
+  }
+  @media screen and (max-width: 991px) {
+    
+    .hero .bar {
+      display: initial;
+      cursor: pointer;
+    }
+   
+    .hero .item {
+      flex-direction: column;
+      text-align: center;
+      width: 300px;
+      height: 58vh;
+      position: absolute;
+      top: 10%;
+      right: 7%;
+      padding: 2rem;
+      padding-left: 6rem;
+      background: #fff;
+      z-index: 100000;
+      margin-top: 4.2rem;
+      display: none;
+  }
+  
+  .hero nav .item:before {
+     position: absolute;
+    content: '';
+    height: 0px;
+    width: 0px;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid transparent;
+    right: -20px; 
+    top: -24px;
+    transform: rotate(137deg);
+     z-index: -1;
+  }
+  
+
+  .hero nav ul a {
+  color: #7f8c8d;
+  font-weight: 600;
+ padding-bottom: 3rem;
+ 
+}
+.hero nav ul a:hover {
+background-color: #eedc15;
+padding:  10px 20px 10px 20px;
+border-radius: 30px;
+
+color: #000000;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .cards .card {
+    height: 80vh;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero .bar {
+    padding-right: 3.2rem;
+  }
+
+  .hero .header-title {
+    font-size: 2rem;
+  }
+ 
+
+  .hero .arrow {
+    width: 2rem;
+  }
+
+  /*  */
+  #one {
+    padding-top: 8rem;
+  }
+  
+  #one h1 {
+    font-size: 1.7rem;
+    
+  }
+
+  #one p {
+    font-size: 0.8rem;
+  }
+
+  #one a {
+    font-size: 0.8rem;
+  }
+
+  #four {
+    padding-top: 8rem;
+  }
+
+  #four h1 {
+    font-size: 1.7rem;
+  }
+  
+  #four p {
+    font-size: 0.8rem;
+  }
+
+  #four a {
+    font-size: 0.8rem;
+
+  }
+
+  #five h1 {
+    font-size: 1.7rem;
+    padding-top: 19rem;
+  }
+  #five p {
+    font-size: 0.8rem;
+  }
+
+  #six h1 {
+    font-size: 1.7rem;
+    padding-top: 19rem;
+  }
+
+  #six p {
+    font-size: 0.8rem;
+  }
+
+  /* client */
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .photo p {
+    font-size: 0.8rem;
+  }
+
+  .photo .name {
+    font-size: 0.8rem;
+  }
+
+  /* footer */
+  .footer h1 {
+    font-size: 1.7rem;
+    padding-top: 2rem;
+  }
+  .footer ul li a {
+    font-size: 0.9rem;
+  }
+  
+
+
+
+}
+
+  @media screen and (max-width: 375px) {
+  
+.hero .arrow {
+  width: 1.3rem;
+ padding-bottom: 8rem;
+}
+
+.hero .item {
+  top: 5%;
+  right: 4%;
+  padding: 2rem;
+  margin-top: 4.2rem;
+}
+
+.hero .bar {
+  padding-left: 3rem;
+  padding-right: 8rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.hero ul li a {
+  font-size: 1.1rem;
+}
+
+.hero .header-title {
+  font-size: 1.5rem;
+}
+
+.cards #one h1 {
+  font-size: 1.6rem;
+}
+
+.cards #one p {
+  font-size: 0.8rem;
+}
+
+.cards #four h1 {
+  font-size: 1.6rem;
+}
+
+.cards #four p {
+  font-size: 0.8rem;
+}
+/* no work */
+/* .cards #five h1 {
+  font-size: 0.1rem;
+} */
+.client p {
+  font-size: 20rem;
+}
+ 
+
+}
+
+  @media screen and (max-width: 425px) {
+  .hero {
+    width: 100%;
+    height: 80vh; 
+  }
+ 
+  .hero .arrow {
+    width: 1.5rem;
+   padding-bottom: 8rem;
+  }
+  
+  .header-title {
+      font-size: 1.5rem;
+      letter-spacing: 0.8rem;
+      margin-top: 1.2rem;
+      padding-bottom: 8rem;
+      padding-left: 1.5rem;  
+  }
+  
+  .hero .item {
+    top: 5%;
+    right: 9%;
+    padding: 2rem;
+    padding-left: 6rem;
+    display: none;
+  }
+  
+  .hero .bar {
+    padding-right: 2.1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  .hero nav h1 {
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .cards{  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #one {
+    order: -3;
+  }
+  
+  #two {
+    order: -4;
+  }
+  
+  /* cards heihgt*/
+  .card {
+    padding: 1rem;
+    height: 20rem;
+   } 
+   
+   .cards #one {
+    height: 28rem;
+   }
+  
+  /* the second div with text */
+  #one {
+    text-align: center;
+   padding-top: 3rem;
+  }
+ 
+  #one h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;  
+  }
+  
+  #one p {
+    font-size: 0.9rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  
+  #one a {
+    padding-left: 1rem;
+  }
+  
+  /* below case text */
+  
+  .cards #four {
+    height: 28rem;
+   }
+  
+  
+  #four {
+    text-align: center;
+    padding-top: 3rem;
+  }
+  #four h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  
+  #four p {
+    font-size: 0.9rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+ 
+  #four a {
+    padding-left: 1rem;
+  }
+  
+  /* cherries */
+  .cards #five {
+    height: 35rem;
+   }
+  
+ .cards #five h1 {
+    font-size: 1.6rem;
+    padding-top: 22rem;
+  }
+ 
+  .cards #five p {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* orange  */
+  .cards #six {
+    height: 35rem;
+   }
+  
+  
+  .cards #six h1 {
+    font-size: 1.6rem;
+    padding-top: 22rem;
+  }
+  
+ .cards #six p {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* client */
+  .client {
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .title {
+    padding-top: 4rem;
+    font-size: 1rem;
+    letter-spacing: 2.5;
+  }
+  
+  /* marketing director */
+    
+  .client .icon img{
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .photo p {
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #7f8c8d;
+  }
+  
+  .photo h4 {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+  }
+  
+  .photo .name {
+    padding-top: 0.5rem;
+    color: #7f8c8d;
+    font-size: 0.8rem;
+  }
+  
+  /* photos */
+   .row {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin: 0 auto;   
+   }
+  
+   /* footer */
+   .footer {
+    width: 100%;
+    height: 55vh;
+    background: #93eee2;
+   }
+   
+   .footer h1 {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+   }
+   
+   .footer ul li {
+    padding-top: 2.3rem;
+   }
+  
+   .footer ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+   }
+  
+   .footer .icon a {
+    padding: 1.1rem;
+    padding-top: 5rem;
+   }
+   
+}
+
+  @media screen and (max-width: 320px) {
+    
+  .hero nav h1 {
+    font-size: 1.2rem;
+  } 
+  
+  .hero .item {
+    width: 280px;
+    height: 58vh;
+    padding: 2rem;
+    padding-left: 5rem;
+    margin-top: 4.2rem;
+  }
+
+  .hero ul li a {
+    font-size: 1.1rem;
+  }
+
+  .hero .header-title {
+    font-size: 1.2rem;
+  }
+
+
+  .hero .bar {
+    padding-left: 7rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .cards #one h1 {
+    font-size: 1.2rem;
+  }
+  
+ .cards #one p {
+    font-size: 0.7rem;
+  }
+
+  .cards #one a {
+    font-size: 0.8rem;
+  }
+  
+ .cards #four h1 {
+    font-size: 1.2rem;
+    
+  }
+  .cards #four p {
+    font-size: 0.7rem;
+   
+  }
+  .cards #four a {
+    font-size: 0.8rem;
+  }
+
+  .cards #five h1 {
+    font-size: 1.2rem;
+  }
+  
+  .cards #five p {
+    font-size: 0.7rem;
+  }
+
+  .cards #six h1 {
+    font-size: 1.2rem;
+  }
+  
+  .cards #six p {
+    font-size: 0.7rem;
+  }
+ 
+  /* client title */
+  .client p {
+    font-size: 0.7rem;
+  }
+  .photo h4 {
+    font-size: 1rem;
+  }
+  
+  .photo .name {
+    font-size: 0.6rem;
+  }
+
+  /* footer */
+  .footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer ul li a {
+    font-size: 0.7rem;
+  }
+  
+  
+
+
+
+
+}
